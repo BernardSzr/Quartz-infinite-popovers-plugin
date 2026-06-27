@@ -1,0 +1,67 @@
+{
+  "name": "quartz-infinite-popovers-plugin",
+  "version": "1.0.0",
+  "description": "Infinite nested hover preview popovers with pinning, resizing, and drag support for Quartz",
+  "author": "BernardSzr",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BernardSzr/Quartz-infinite-popovers-plugin.git"
+  },
+  "keywords": ["quartz", "popover", "preview", "hover", "pin", "resize", "drag"],
+  "files": [
+    "components/",
+    "scripts/",
+    "styles/",
+    "src/",
+    "types/",
+    "tsup.config.ts",
+    "tsconfig.json"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./components": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.4"
+  },
+  "peerDependencies": {
+    "preact": ">=10.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "quartz": {
+    "name": "infinite-popover",
+    "displayName": "Infinite Popover",
+    "description": "Infinite nested hover preview popovers with pinning, resizing, and drag support",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultEnabled": true,
+    "components": {
+      "InfinitePopover": {
+        "name": "Infinite Popover",
+        "displayName": "Infinite Popover",
+        "description": "Infinite nested hover preview popovers",
+        "version": "1.0.0",
+        "defaultPosition": "afterBody",
+        "defaultPriority": 0
+      }
+    }
+  }
+}
