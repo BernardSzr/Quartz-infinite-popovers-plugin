@@ -1,16 +1,15 @@
+[English](README.en.md) | [中文](README.md)
+
 # Quartz Infinite Popovers
 
-无限嵌套弹窗预览插件，适用于 [Quartz](https://github.com/jackyzha0/quartz)。灵感来自 [gwern.net](https://gwern.net)。
+为[Quartz](https://github.com/jackyzha0/quartz)编写的无限层级预览弹窗插件，打破[Quartz](https://github.com/jackyzha0/quartz)的单层预览弹窗限制，插件启发自[gwern.net](https://gwern.net)。
 
 ## 功能
 
-- 悬浮内部链接弹出预览弹窗，支持无限嵌套
-- 每个弹窗可独立 pin、拖动、调整大小
-- pin / unpin 切换
-- 拖动工具栏自动 pin
-- 拖动边角自动 pin 并调整大小
-- 新标签页打开
+- 拓展[Quartz](https://github.com/jackyzha0/quartz)的预览链接功能，允许其递归式地弹出无限层预览弹窗
+- 每个弹窗都可以独立 pin、拖动、调整大小、新标签页打开完整文章
 - 亮色 / 暗色主题自动跟随
+- 移动端（屏幕宽度 < 700px）自动禁用
 
 ## 安装
 
@@ -32,7 +31,7 @@ plugins:
 然后运行：
 
 ```bash
-npx quartz install-plugins
+npx quartz plugin install --from-config
 npx quartz build --serve
 ```
 
