@@ -2,7 +2,7 @@
 
 # Quartz Infinite Popovers
 
-为[Quartz](https://github.com/jackyzha0/quartz)编写的无限递归式预览弹窗插件，打破[Quartz](https://github.com/jackyzha0/quartz)的单层预览弹窗限制，插件启发自[gwern.net](https://gwern.net)。
+为[Quartz](https://github.com/jackyzha0/quartz)编写的无限递归式预览弹窗插件，启发自[gwern.net](https://gwern.net)。
 
 ## 功能
 

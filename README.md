@@ -2,7 +2,7 @@
 
 # Quartz Infinite Popovers
 
-An infinitely recursive popovers plugin for [Quartz](https://github.com/jackyzha0/quartz), Inspired by [gwern.net](https://gwern.net).
+An infinitely recursive popovers plugin for [Quartz](https://github.com/jackyzha0/quartz), inspired by [gwern.net](https://gwern.net).
 
 ## Features
 
