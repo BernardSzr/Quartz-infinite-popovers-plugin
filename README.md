@@ -14,10 +14,14 @@
 
 ## 安装
 
-在 `quartz.config.yaml` 中添加：
+在 `quartz.config.yaml` 中禁用 Quartz 官方 popover 并添加本插件：
 
 ```yaml
 plugins:
+  - source: "@jackyzha0/quartz"
+    components:
+      Popover:
+        enabled: false
   - source: https://github.com/BernardSzr/Quartz-infinite-popovers-plugin
     enabled: true
     layout:
