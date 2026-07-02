@@ -1,6 +1,6 @@
 import {
   component
-} from "./chunk-C7ZQX7OP.js";
+} from "./chunk-BDQR22BO.js";
 export {
   component as InfinitePopover
 };
