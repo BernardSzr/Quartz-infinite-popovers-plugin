@@ -1,1 +1,1 @@
-export { InfinitePopover } from "../components/InfinitePopover"
+export { InfinitePopover } from "./components/InfinitePopover"

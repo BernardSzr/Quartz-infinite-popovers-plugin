@@ -11,11 +11,7 @@
   },
   "keywords": ["quartz", "popover", "preview", "hover", "pin", "resize", "drag"],
   "files": [
-    "components/",
-    "scripts/",
-    "styles/",
     "src/",
-    "types/",
     "tsup.config.ts",
     "tsconfig.json"
   ],
