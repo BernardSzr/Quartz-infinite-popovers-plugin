@@ -13,25 +13,20 @@ An infinitely recursive popovers plugin for [Quartz](https://github.com/jackyzha
 
 ## Installation
 
-Disable the official Quartz popover and add this plugin in `quartz.config.yaml`:
-
-```yaml
-plugins:
-  - source: "@jackyzha0/quartz"
-    components:
-      Popover:
-        enabled: false
-  - source: https://github.com/BernardSzr/Quartz-infinite-popovers-plugin
-    enabled: true
-    layout:
-      position: afterBody
-      priority: 0
+```bash
+npx quartz plugin add github:BernardSzr/Quartz-infinite-popovers-plugin
 ```
 
-Then run:
+Then disable the official Quartz popover in `quartz.config.yaml`:
+
+```yaml
+configuration:
+  enablePopovers: false
+```
+
+Finally, build and serve:
 
 ```bash
-npx quartz plugin install --from-config
 npx quartz build --serve
 ```
 

@@ -1,9 +1,8 @@
 import type { QuartzComponent, QuartzComponentProps } from "@quartz-community/types"
-
-// @ts-ignore — esbuild ?raw import for client-side script (bundles all imports)
-import script from "../scripts/infinitePopovers?raw"
-// @ts-ignore — esbuild ?raw import for styles
-import style from "../styles/infinitePopovers.css.txt?raw"
+// @ts-expect-error — inline script import handled by Quartz bundler
+import script from "../scripts/infinitePopovers.inline.ts"
+// @ts-expect-error — style import handled by Quartz bundler
+import style from "../styles/infinitePopovers.scss"
 
 const InfinitePopover: QuartzComponent = (_props: QuartzComponentProps) => {
   // No server-side rendering needed — this component is purely client-side

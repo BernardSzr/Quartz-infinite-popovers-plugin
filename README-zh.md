@@ -13,25 +13,20 @@
 
 ## 安装
 
-在 `quartz.config.yaml` 中禁用 Quartz 官方 popover 并添加本插件：
-
-```yaml
-plugins:
-  - source: "@jackyzha0/quartz"
-    components:
-      Popover:
-        enabled: false
-  - source: https://github.com/BernardSzr/Quartz-infinite-popovers-plugin
-    enabled: true
-    layout:
-      position: afterBody
-      priority: 0
+```bash
+npx quartz plugin add github:BernardSzr/Quartz-infinite-popovers-plugin
 ```
 
-然后运行：
+然后在 `quartz.config.yaml` 中禁用 Quartz 官方 popover：
+
+```yaml
+configuration:
+  enablePopovers: false
+```
+
+最后构建并启动：
 
 ```bash
-npx quartz plugin install --from-config
 npx quartz build --serve
 ```
 

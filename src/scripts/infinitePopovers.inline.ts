@@ -484,6 +484,14 @@ function setup() {
   document.addEventListener("mousemove", onResizeMove)
   document.addEventListener("mouseup", onDragEnd)
   document.addEventListener("mouseup", onResizeEnd)
+
+  window.addCleanup(() => {
+    document.removeEventListener("mousemove", handleMouseMove)
+    document.removeEventListener("mousemove", onDragMove)
+    document.removeEventListener("mousemove", onResizeMove)
+    document.removeEventListener("mouseup", onDragEnd)
+    document.removeEventListener("mouseup", onResizeEnd)
+  })
 }
 
 document.addEventListener("nav", setup)
