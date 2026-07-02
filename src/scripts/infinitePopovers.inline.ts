@@ -44,7 +44,7 @@ let activeAnchor: HTMLAnchorElement | null = null
 
 let currentActivePopoverNode: PopoverNode | null = null
 
-const ALIVE_REGION_DEBOUNCE = 300
+const ALIVE_REGION_DEBOUNCE = 750
 
 const popovers = new Map<string, PopoverNode>()
 
